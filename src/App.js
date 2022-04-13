@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import MyLineChart from './Components/LineChart/MyLineChart';
+
+
 
 function App() {
+  const data = [
+    {
+      name: 'Page A',
+      sale: 4000,
+      purchase: 2400,
+      code: 2400,
+    },
+    {
+      name: 'Page B',
+      sale: 3000,
+      purchase: 1398,
+      code: 2210,
+    },
+    {
+      name: 'Page C',
+      sale: 2000,
+      purchase: 9800,
+      code: 2290,
+    },
+    {
+      name: 'Page D',
+      sale: 2780,
+      purchase: 3908,
+      code: 2000,
+    }
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MyLineChart data={data}></MyLineChart>
     </div>
   );
 }
