@@ -1,5 +1,6 @@
 import './App.css';
 import MyLineChart from './Components/LineChart/MyLineChart';
+import MyAxiosChart from './Components/MyAxiosChart/MyAxiosChart';
 
 
 
@@ -34,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <MyLineChart data={data}></MyLineChart>
+      <MyAxiosChart></MyAxiosChart>
     </div>
   );
 }
